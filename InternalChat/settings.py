@@ -35,6 +35,7 @@ ALLOWED_HOSTS = ['smcrm.apnwebapps.com']
 # Application definition
 
 INSTALLED_APPS = [
+    'daphne',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -72,7 +73,7 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'InternalChat.wsgi.application'
-
+ASGI_APPLICATION = "InternalChat.asgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
